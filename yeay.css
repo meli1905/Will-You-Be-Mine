@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(247, 215, 237);
+    background-image: url("https://img1.picmix.com/output/stamp/normal/8/9/1/4/264198_d6166.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+html {
+   overflow: hidden;
+}
+
+h1 {
+    font-style: lucida handwriting;
+    font-size: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 2px;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 4px 3px black;
+    animation: pulsing 3.0s infinite;
+    transition: all 0.8s ease;
+
+}
+
+@keyframes pulsing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.jump {
+    font-style: lucida handwriting;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 2px;
+    height: 100%;
+}
+
+
+#Dans_B {
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    top: 0;
+    left: 15%;
+    animation-name: Bear_Dance;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes Bear_Dance{
+    0%  {left: 0; top: 0;}
+    5%  {left: 10%; top: 0;}
+    32% {left: 30%; top: 40%; transform: skewX(0); filter: blur(0);}
+    40% {left: 22%; top: 50%; transform: skewX(-15deg); filter: blur(2px);}
+    50% {left: 50%; top: 60%; transform: scaleX(-1); filter: blur(0);}
+    60% {left: 80%; top: 60%; transform: scaleX(-1); filter: blur(0);}
+    80% {left: 30%; top: 40%;transform: scaleX(1);}
+    100%{left: 15%; top: 0;}
+}
